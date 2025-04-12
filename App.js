@@ -15,6 +15,26 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    textAlign : 'center',
+    textTransform : 'uppercase',
+    
+  },
+  middle: {
+    flex: 0.2,
+    height: 100,
+    backgroundColor: 'grey',
+    borderWidth : 5,
+    margin : 10
+  },
+  under: {
+    flex: 0.2,
+    height: 100,
+    backgroundColor: 'green',
+    borderWidth : 5,
+    margin : 10
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 16,
   },
 });
