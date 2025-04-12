@@ -1,0 +1,16 @@
+{
+  "rules": {
+    "rooms": {
+      "$roomId": {
+        ".read": "auth != null",
+        ".write": "auth != null",
+        "host": { ".validate": "newData.isString() && newData.val() === auth.uid" },
+        "players": {
+          "$userId": {
+            ".write": "$userId === auth.uid"
+          }
+        }
+      }
+    }
+  }
+}
